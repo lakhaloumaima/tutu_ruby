@@ -13,6 +13,8 @@
         <% @categories.each do |category|  %>
             <tr>  
                 <td> <%=  category.id %> </td>
+                <td style="" > <%= image_tag 'image.jpg' , alt: '' , class: "img-responsive" , style:'width:120%' %> </td>
+               
                 <td><%=  category.name %>   </td>
                 <td> <%=  category.slug %>  </td>
                 <td> <a href="<%=  edit_category_path(category.id) %>" class="btn btn-primary" > Editer </a> 

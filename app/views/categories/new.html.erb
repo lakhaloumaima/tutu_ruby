@@ -1,6 +1,12 @@
 <h1> Ajouter une catégorie </h1>
 
 <%= form_for @category do |f| %>
+
+    <div class="form-group">
+        <label>Avatar </label>
+        <%= f.file_field :avatar %>
+    </div>
+
    <div class="form-group" >
         <label> Nom du catégorie </label>
         <%= f.text_field :name, placeholder: 'Name' ,class: 'form-control' %>
